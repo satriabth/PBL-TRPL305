@@ -1,0 +1,30 @@
+CARA TEST - APLIKASI MICROCREDENTIAL (MODE DEMO)
+================================================
+
+CARA PALING MUDAH (Windows):
+  1. Ekstrak seluruh isi zip ini ke satu folder
+  2. Dobel-klik file  JALANKAN_DEMO.bat
+  3. Browser Chrome akan terbuka otomatis menampilkan aplikasi
+  4. Untuk menghentikan: tutup jendela hitam (Command Prompt)
+
+  * Butuh Python untuk menjalankan (lihat keterangan di dalam .bat
+    bila muncul pesan error Python tidak ditemukan).
+
+AKUN DEMO (kata sandi semua: 123456)
+------------------------------------
+  Calon Mahasiswa : maba@test.com
+  Admin           : admin@test.com
+  Keuangan        : keuangan@test.com
+  Super Admin     : super@test.com
+
+  Alur lengkap: Login sebagai maba -> isi formulir -> upload dokumen ->
+  pembayaran -> submit -> ganti login Admin untuk menyetujui ->
+  ganti login Keuangan untuk menerima -> kembali ke maba, status SELESAI.
+
+CATATAN
+-------
+  - Semua data HANYA contoh (dummy) yang tersimpan di browser masing-masing
+    (localStorage). Tidak ada data asli / tidak terhubung internet.
+  - Aplikasi otomatis adaptif: tampilan mobile di layar kecil,
+    tampilan website di layar lebar.
+  - Jika ChatGPT / Google Chrome memblokir, pilih "Keep" lalu buka lagi.

@@ -1,0 +1,112 @@
+Registrasi Akun
+
+Membuat akun menggunakan nama, email, dan kata sandi.
+
+Login / Autentikasi
+
+Masuk ke aplikasi sesuai akun dan perannya (menggunakan JWT).
+
+Formulir Pendaftaran Multi-Step
+
+Pengisian data diri.
+
+Pengisian data pendidikan.
+
+Pemilihan track dan peminatan Microcredential.
+
+Informasi biaya dan durasi program.
+
+Simpan Draft
+
+Menyimpan data formulir sementara.
+
+Melanjutkan pengisian di waktu lain tanpa harus mengisi semua data sekaligus.
+
+Unggah Dokumen Persyaratan
+
+Unggah ijazah.
+
+Unggah SKHU / transkrip / nilai.
+
+Unggah KTP.
+
+Unggah bukti pendaftaran.
+
+Sistem mencatat jenis dokumen, nama file, lokasi file, dan status verifikasi.
+
+Pembayaran Biaya Pendaftaran
+
+Menampilkan informasi rekening tujuan (Bank KB Bukopin 1003301245).
+
+Menampilkan nominal biaya pendaftaran awal (Rp200.000).
+
+Unggah bukti pembayaran (transfer).
+
+Data pembayaran disimpan bersama nominal, waktu unggah, dan file bukti transfer.
+
+Submit Pendaftaran
+
+Tombol submit setelah data formulir, dokumen, dan bukti pembayaran lengkap.
+
+Status berubah dari draft menjadi submitted.
+
+Data tidak dapat diubah bebas setelah submit.
+
+Pantau Status Registrasi
+
+Menampilkan status dalam bentuk timeline.
+
+Status: draft, submitted, approved_admin, approved_keuangan, selesai, rejected_admin, rejected_keuangan.
+
+Lihat Catatan Perbaikan
+
+Melihat catatan dari admin atau keuangan jika pendaftaran ditolak.
+
+Halaman Informasi Umum
+
+Informasi track dan peminatan.
+
+Informasi rekening pembayaran.
+
+FAQ (pertanyaan yang sering ditanyakan).
+
+Contact person admin dan keuangan.
+
+
+# Deskripsi Project Aplikasi Mobile Microcredential — Modul Registrasi Mahasiswa Baru
+
+Project ini adalah pengembangan aplikasi mobile Microcredential yang secara khusus berfokus pada proses registrasi atau pendaftaran mahasiswa baru. Aplikasi tidak membahas proses pembelajaran, ujian kompetensi, sertifikasi, RPL, konversi SKS, maupun kegiatan setelah mahasiswa diterima. Fokus utama project adalah membantu calon mahasiswa menyelesaikan seluruh kebutuhan pendaftaran secara digital, mulai dari membuat akun sampai memperoleh status registrasi selesai.
+
+Sederhananya, aplikasi ini dibuat untuk menggantikan atau mempermudah proses pendaftaran yang sebelumnya dilakukan melalui formulir manual, pengiriman berkas melalui chat, dan pemeriksaan pembayaran secara terpisah. Dengan aplikasi ini, calon mahasiswa dapat mengisi data, mengunggah dokumen persyaratan, melakukan pembayaran, serta memantau perkembangan verifikasi dalam satu tempat.
+
+Alur utama aplikasi dimulai ketika calon mahasiswa baru atau maba membuat akun menggunakan nama, email, dan kata sandi. Setelah berhasil masuk, maba dapat mengisi formulir pendaftaran yang berisi data diri, data pendidikan, serta pilihan track dan peminatan Microcredential. Track yang tersedia misalnya Manajemen dan Bisnis, Teknik Elektro, Informatika, serta Teknik Mesin. Setiap track dapat memiliki beberapa pilihan peminatan, beserta informasi biaya dan durasi program.
+
+Formulir pendaftaran dirancang dalam bentuk beberapa tahap agar lebih mudah diisi melalui perangkat mobile. Hal yang penting dari fitur ini adalah adanya kemampuan simpan draft. Artinya, maba tidak harus langsung mengisi semua data dalam satu waktu. Mereka dapat mengisi sebagian data terlebih dahulu, menyimpannya sebagai draft, lalu melanjutkan pengisian pada waktu lain. Hal ini penting karena beberapa data atau dokumen mungkin belum siap saat pendaftar pertama kali membuka aplikasi.
+
+Setelah formulir diisi, maba wajib mengunggah dokumen persyaratan pendaftaran. Dokumen tersebut dapat berupa ijazah, SKHU atau transkrip/nilai yang dipersyaratkan, KTP, dan bukti pendaftaran. Dokumen diunggah dalam bentuk softcopy melalui aplikasi. Sistem akan mencatat jenis dokumen, nama file, lokasi file, serta status verifikasinya agar admin dapat memeriksa kelengkapan berkas secara terstruktur.
+
+Tahap berikutnya adalah pembayaran biaya pendaftaran awal. Aplikasi akan menampilkan informasi rekening tujuan pembayaran, misalnya rekening Bank KB Bukopin nomor 1003301245, serta nominal biaya pendaftaran awal sebesar Rp200.000. Setelah melakukan transfer, maba mengunggah bukti pembayaran melalui aplikasi. Data pembayaran akan disimpan bersama nominal pembayaran, waktu unggah, dan foto atau file bukti transfer.
+
+Apabila data formulir, dokumen, dan bukti pembayaran sudah lengkap, maba dapat menekan tombol submit. Setelah proses submit dilakukan, data pendaftaran tidak dapat diubah secara bebas karena akan masuk ke antrean verifikasi. Status pendaftaran akan berubah dari draft menjadi submitted. Pada tahap ini, proses pemeriksaan dilakukan oleh dua pihak, yaitu admin dan bagian keuangan.
+
+Admin bertugas memeriksa kelengkapan serta kesesuaian data pendaftaran dan dokumen yang diunggah oleh maba. Admin dapat melihat daftar seluruh pendaftar, membuka detail registrasi, memeriksa formulir, melihat dokumen, dan memberikan keputusan. Jika data sudah benar dan lengkap, admin dapat menyetujui pendaftaran. Namun, jika ada data yang salah, dokumen tidak terbaca, atau persyaratan belum lengkap, admin dapat menolak pendaftaran dan memberikan catatan. Catatan tersebut akan terlihat oleh maba agar mereka mengetahui bagian yang harus diperbaiki.
+
+Setelah admin menyetujui data pendaftaran, proses berlanjut ke bagian keuangan. Bagian keuangan bertugas memeriksa bukti transfer dan memastikan nominal pembayaran telah sesuai. Keuangan dapat menyetujui atau menolak pembayaran. Jika bukti pembayaran valid, status akan disetujui oleh keuangan dan registrasi dinyatakan selesai. Jika pembayaran belum sesuai atau bukti transfer tidak valid, keuangan dapat menolak dengan memberikan alasan atau catatan perbaikan.
+
+Status registrasi dirancang agar mudah dipahami oleh maba. Status yang digunakan terdiri dari draft, submitted, approved\_admin, approved\_keuangan, selesai, rejected\_admin, dan rejected\_keuangan. Status selesai menjadi tanda bahwa data pendaftaran telah lolos verifikasi administrasi dan pembayaran. Di aplikasi mobile, status ini dapat ditampilkan dalam bentuk timeline agar maba dapat melihat posisi proses pendaftarannya dengan jelas.
+
+Aplikasi ini memiliki empat jenis pengguna. Pertama adalah maba, yaitu pengguna yang melakukan pendaftaran, mengisi formulir, mengunggah dokumen, mengunggah bukti bayar, dan melihat status registrasi. Kedua adalah admin, yaitu pengguna yang memverifikasi data dan dokumen pendaftar. Ketiga adalah keuangan, yaitu pengguna yang memverifikasi pembayaran. Keempat adalah super admin, yaitu pengguna yang mengelola seluruh data pendukung aplikasi dan akun pengguna.
+
+Super admin memiliki akses untuk mengelola master data yang digunakan pada aplikasi. Master data tersebut meliputi data pengguna, track Microcredential, peminatan, FAQ, rekening pembayaran, dan contact person. Dengan fitur ini, informasi dalam aplikasi dapat diperbarui tanpa harus mengubah aplikasi secara langsung. Contohnya, jika ada perubahan nomor rekening, biaya, daftar peminatan, atau kontak admin, super admin cukup memperbarui data melalui halaman pengelolaan.
+
+Selain fitur pendaftaran, aplikasi juga menyediakan halaman informasi umum untuk membantu calon mahasiswa. Halaman tersebut mencakup informasi track dan peminatan, rekening pembayaran, daftar pertanyaan yang sering ditanyakan atau FAQ, serta contact person admin dan keuangan. Konten ini dapat diambil dari dokumen panduan Microcredential yang sudah tersedia, seperti syarat pendaftaran, biaya awal, pilihan track, peminatan, dan FAQ.
+
+Dari sisi basis data, sistem menggunakan beberapa tabel utama, yaitu users, tracks, peminatan, registrations, documents, payments, rekening, faqs, dan contact\_persons. Tabel users digunakan untuk menyimpan seluruh akun pengguna berdasarkan perannya. Tabel registrations menyimpan data pendaftaran dan status prosesnya. Pada tabel ini juga dapat digunakan kolom draft\_data dalam bentuk JSON untuk menyimpan data sementara saat pendaftar belum menyelesaikan formulir. Pendekatan ini memungkinkan data draft tetap tersimpan walaupun ada beberapa field utama yang belum lengkap.
+
+Tabel documents digunakan untuk menyimpan dokumen yang diunggah oleh maba, sedangkan payments digunakan untuk menyimpan bukti pembayaran. Tabel tracks dan peminatan digunakan untuk menyimpan pilihan program Microcredential. Sementara itu, tabel rekening, faqs, dan contact\_persons digunakan untuk menampilkan informasi pendukung kepada pendaftar.
+
+Secara teknis, aplikasi dapat dibangun menggunakan Flutter atau React Native untuk aplikasi mobile. Backend dapat menggunakan Laravel atau NestJS dengan API berbasis REST. Sistem autentikasi dapat menggunakan JWT agar setiap pengguna dapat masuk sesuai akun dan perannya. Untuk kebutuhan pengelolaan data yang lebih nyaman, dapat ditambahkan web admin sebagai pelengkap, tetapi web admin bukan fokus utama apabila project diprioritaskan pada mobile.
+
+Tahapan pengembangan dapat dibagi menjadi empat sprint. Sprint pertama berfokus pada fondasi sistem, yaitu setup backend, database, autentikasi, serta master data. Sprint kedua berfokus pada aplikasi untuk maba, seperti login, formulir multi-step, simpan draft, unggah dokumen, pembayaran, dan status registrasi. Sprint ketiga berfokus pada fitur admin dan keuangan untuk melihat data serta melakukan approval atau rejection. Sprint terakhir berfokus pada penyempurnaan aplikasi, seperti validasi input, notifikasi perubahan status, pengujian, dan deployment.
+
+Dengan demikian, inti dari project ini adalah membuat aplikasi pendaftaran Microcredential yang lengkap tetapi tetap memiliki scope yang jelas dan terukur. Sistem hanya menangani perjalanan calon mahasiswa dari tahap pembuatan akun hingga registrasi dinyatakan selesai setelah data administrasi dan pembayaran disetujui. Project ini tidak menangani proses pembelajaran atau sertifikasi, sehingga pengembangan dapat lebih fokus pada pengalaman registrasi yang mudah, terstruktur, transparan, dan terdokumentasi dengan baik.
